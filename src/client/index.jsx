@@ -1,20 +1,21 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
+import React from "react";
+import ReactDOM from "react-dom";
 
-import tweets from 'tweets'
+import Tweet from "Tweet";
 
-class App extends React.Component {
-  render() {
-    return (
-      <div>
-        tweets
-      </div>
-    );
-  }
-}
+// import tweets from "tweets";
 
-const element = document.getElementById('app');
+// class App extends React.Component {
+//   render() {
+//     let tweet = tweets.tweets;
+//     console.log(tweet[0].user.name);
 
-ReactDOM.render(<App />, element );//
+//     return <div>Hello{tweet[0].user.name}</div>;
+//   }
+// }
+
+const element = document.getElementById("app");
+
+ReactDOM.render(<Tweet />, element); //
 
 console.log("tweet react");
